@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  background-color: #293133;
+  color: #fff;
+}
+
+main {
+  margin: 15vh auto;
+  width: 380px;
+  height: 320px;
+  border: 2px dotted #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+
+main h1,
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: underline red;
+}
+
+main form p {
+  text-align: center;
+  font-size: 2rem;
+  color: red;
+}
+
+main form div {
+  padding: 5px 0 0 0;
+}
+
+main form label {
+  display: block;
+  padding: 0 0 10px 0;
+}
+
+#fuelprice,
+#consumption,
+#length {
+  display: block;
+  margin: 10px 0 0 0;
+  margin: 0 auto;
+  width: 300px;
+  text-align: right;
+}
+
+#button {
+  display: block;
+  background-color: #293133;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 15px 50px;
+  margin: 10px auto;
+  text-align: center;
+}

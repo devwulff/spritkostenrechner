@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spritkostenrechner</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Fahrtkostenrechner</h1>
+      <form action="" onsubmit="return false">
+        <div>
+          <label for="fuelprice">Spritkosten in Euro</label>
+          <input
+            type="number"
+            id="fuelprice"
+            step=".01"
+            required
+            name="fuelprice"
+            placeholder="€ eingeben"
+          />
+        </div>
+        <div>
+          <label for="consumption">durchschn. Spritverbrauch / 100km</label>
+          <input
+            type="number"
+            step=".01"
+            id="consumption"
+            required
+            name="consumption"
+            placeholder="⦴ in L / 100km"
+          />
+        </div>
+        <div>
+          <label for="length">Zufahrende Strecke in Kilometer</label>
+          <input
+            type="number"
+            name="length"
+            step=".01"
+            required
+            id="length"
+            placeholder=""
+          />
+          <input
+            type="button"
+            value="Berechne"
+            onclick="calculate()"
+            id="button"
+          />
+        </div>
+        <div>
+          <h2>Die Fahrtkosten betragen:</h2>
+          <p id="cost"></p>
+        </div>
+      </form>
+    </main>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
